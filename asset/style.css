@@ -1,0 +1,297 @@
+
+body {
+    font-family: 'Fira Sans', sans-serif !important;
+
+}
+
+/* LOGIN */
+.button-masuk {
+ background-color: #153D77 !important;
+ box-shadow: #153D77;
+ margin-top: 30px;
+ 
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F6FC;
+    
+}
+.login-left {
+    background-image: url('../img/Work2.jpg');
+    height: 200px;
+
+}
+
+
+.login-left{
+
+    background-size: cover;
+    
+}
+
+.login-left, .login-right .inputan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-right{
+    margin: 50px;
+    margin-top: 160px;
+    
+}
+.login-right .copy{
+    color: black;
+    text-align: left;
+    align-items: left;
+    
+}
+
+.login-right .form{
+   margin-top: 30px;
+}
+@media screen and (min-width :900px){
+    .login {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .login-left,
+    .login-right .inputan {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* USER */
+.user {
+    display: flex;
+    min-height: 100vh;
+    background-color: #F2F6FC;
+}
+
+/* SIDEBAR */
+
+/* .icon{
+    width: 260px;
+    /* margin-bottom: 16px !important; */
+ 
+
+.header {
+    margin-bottom: 24px !important;
+    margin-left: 8px;
+    
+    
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background:white;
+    color: #fff;
+    transition: all 0.3s;
+    padding: 8px !important;
+    
+}
+
+#sidebar .image-text img {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+#sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.image-text .header-text{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.header-text .pengguna {
+    font-weight: 600;
+    font-size: 32px;
+
+}
+
+.header .mailpengguna {
+    font-weight: 600;
+}
+/* .sidebar .header .list-item .icon{
+    align-items: center;
+} */
+
+#sidebar li {
+    height: 50px;
+    list-style: none;
+    margin-top: 10px;   
+    
+}
+
+#sidebar .menu {
+    margin-top: 24px;
+}
+
+
+
+
+
+
+
+
+#sidebar li .icon {
+    font-size: 20px;
+    min-width: 30px;
+}
+
+#sidebar li .text {
+    font-size: 20px;
+
+}
+
+#sidebar li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-link {
+    margin-left: 8px;
+}
+
+
+p {
+    color: #E0E5EC;
+}
+a .nav-link {
+    font-size: 16px !important;
+    
+    
+}
+
+a {
+    color: black !important;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: black !important;
+  }
+
+
+span .active {
+    color: black;
+  }
+.active {
+    background-color: #E0E5EC !important;
+    color: black;
+    border-radius: 2px;
+    display: flex;
+    
+    
+    
+    
+}
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #E0E5EC;
+    
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+
+
+/* MAIN CONTENT */
+
+.container-fluid {
+    padding: 0px !important;
+    /* margin-left: 240px !important; */
+    /* overflow: hidden; */
+}
+#content {
+    width: 100%;
+    
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.heading{
+    background-color:#153D77;
+    height: 200px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.heading-text{
+    margin-left: 24px;
+
+}
+
+.crd-text{
+    margin-bottom: 16px;
+}
+
+.card {
+    margin-top: 16px !important;
+    /* margin-left: 24px !important;
+    margin-right: 24px !important; */
+    padding: 24px;
+}
+
+.btndetails{
+    width: 10px !important;
+height: 5px !important;
+padding: 0px;
+margin: 0px;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+.cardinfo{
+    width: auto ;
+height: 150px;
+padding-left:  16px !important;
+padding-right: 16px !important;
+justify-content: center ;
+align-items: center;
+
+}
+
+.info {
+    margin-left: 24px;
+}
+
+.stat-digit {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.stat-text {
+    font-size: 13px;
+    color: grey;
+}
+h1{
+    color: grey !important;
+}

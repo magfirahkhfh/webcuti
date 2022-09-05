@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Devisi</title>
+    <link href="img/LOGO KOTAK.png" rel="icon">
+    <link href ="asset/style.css" rel="stylesheet" >
+    <!-- <link href ="asset/user.css" rel="stylesheet" > -->
+    <link href ="asset/sidebar.css" rel="stylesheet" >
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+
+    
+    
+</head>
+<body>    
+    <div class="user">
+        <nav id="sidebar">
+            <div class="container-fluid">
+                <div class="header navbar-brand">
+                    <div class="image-text">
+                        <span class="image">
+                            <a href="admin.html">
+                                <img src="img/Logo2 2.svg" alt="logo">
+                            </a>
+                        </span>
+                        <div class="text header-text">
+                            <span class="pengguna">
+                             USER
+                            </span>
+                            <span class="mailpengguna">
+                            user2gmail.com 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item ">
+                          <a class="nav-link" aria-current="page" href="pengajuancuti_admin.html">
+                            <i class="bi bi-file-text-fill icon" ></i>
+                            <span class="text">Pengajuan Cuti</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="masterdevisi.html">
+                              <i class="bi bi-person-workspace icon" ></i>
+                              <span class="text">Master Devisi</span></a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="masterpegawai.html">
+                              <i class="bi bi-person-lines-fill icon" ></i>
+                              <span class="text">Master Pegawai</span></a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="ubahprofil_admin.html">
+                              <i class="bi bi-people-fill icon" ></i>
+                              <span class="text">Ubah Profil</span></a>
+                         </li>
+                         <li class="nav-item align-content-end style=margin-top: 24px;">
+                            <a class="nav-link table-hover" aria-current="page" href="login.html">
+                              <i class="bi bi-box-arrow-left icon" ></i>
+                              <span class="text">Keluar</span>
+                            </a>
+                         </li>
+                       
+                      </ul>
+                </div>
+            </div>
+        </nav>
+       
+    <div class="container-fluid" id="content">
+
+        <!-- Page Heading -->
+        <div class="heading d-flex" >
+            <div class="heading-text">
+                <button class="btn btn-lg  btn-details" id="sidebarCollapse" type="button">
+                    <i class="bi bi-list" style="color:white;"></i>
+                </button>
+            </div>
+            
+            <div class="row">
+                <p class="heading-text text-white">Menu Master Devisi</p>
+                <h1 class="heading-text text-white">Daftar Devisi Baru</h1>
+            </div>        
+        </div>
+        <div class="container">
+            <!-- Content Row -->
+        <div class="row">
+        </div>
+        </div>
+        <div class="container">    
+            <div class="row">
+                <!-- Area Chart -->
+                <div class="col-sm-3 col-md-8 col-lg-8 col-xl-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="form">
+                                <label class="form-label" for="namadevisi"><p>Nama devisi baru</p></label>
+                                <input class="form-control-plaintext" type="text" name="namadevisi" id="namadevisi" placeholder="Operasional">
+                            </div>
+                            <div class="card-body" style="margin-top: 32px;" >
+                                
+                                    <div class="table-responsive-sm">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                              <tr>
+                                                <th>No</th>
+                                                <th>Nama Jabatan</th>
+                                                <th>Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>
+                                                        <input class="form-control-plaintext" type="text" name="namajabatan" class="jabatan" id="namajabatan1" placeholder="Android Develop" disabled>
+                                                    </td>
+                                                    <td >
+                                                        <div class="mx-2 ">
+                                                            <button class="btn btn-sm bi bi-pencil-square" class="edit-jabatan" id="1"></button>
+                                                            <button class="btn btn-sm bi-trash"></button>
+                                                        </div>
+                                                    </td>
+                                                
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td><input class="form-control-plaintext" type="text" name="namajabatan" class="jabatan" id="namajabatan2" placeholder="web Develop" disabled></td>
+                                                    <td >
+                                                        <div class="mx-2 ">
+                                                            <a class="btn btn-sm bi bi-pencil-square" class="edit-jabatan" id="2"></a>
+                                                            <button class="btn btn-sm bi-trash"></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                              <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <input type="text" class="form-control-plaintext"  class="jabatan" id="namajabatan3" placeholder="Masukkan nama jabatan baru">
+                                                </td>
+                                                <td >
+                                                    <div class="mx-2 ">
+                                                        <button class="btn btn-warning btn-sm bi-plus text-white" class="edit-jabatan" id="3">Tambah</button>
+                                                    </div>
+                                                </td>                                                
+                                              </tr>
+
+                                              
+                                              
+
+                                            </tbody>
+                                          </table>
+                                        <div class="d-flex justify-content-end">
+                                          <button class="btn btn-warning bg-sm bi bi-plus text-white">Tambah </button>                                   </a> 
+                                      </div> 
+                                    </div>
+                                    
+                                    
+                                
+                            </div>
+                        </div>   
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="js/bootstrap.bundle.min.js">
+      
+    </script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+            $('.edit-jabatan').on('click', function(){
+                var id = $(this).attr('id');
+                $('#namajabatan'+id).removeProp('disabled');
+            })
+        });
+    </script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('#editjabatan').on('click', function () {
+                $('#namajabatan').toggleClass('active');
+            });
+        });
+    </script> -->
+</body>
+</html>
